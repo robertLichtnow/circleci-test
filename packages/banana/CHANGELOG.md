@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.4](https://github.com/robertLichtnow/circleci-test/compare/@lichtnow/banana@1.2.3...@lichtnow/banana@1.2.4) (2019-10-09)
+
+
+### Bug Fixes
+
+* **package.json:** remved apple from package.json ([8da41d8](https://github.com/robertLichtnow/circleci-test/commit/8da41d8))
+
+
+
+
+
 ## [1.2.3](https://github.com/robertLichtnow/circleci-test/compare/@lichtnow/banana@1.2.2...@lichtnow/banana@1.2.3) (2019-10-09)
 
 
