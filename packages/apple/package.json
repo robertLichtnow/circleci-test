@@ -1,5 +1,5 @@
 {
-  "name": "@testing/apple",
+  "name": "@lichtnow/apple",
   "version": "1.1.1",
   "description": "",
   "main": "index.js",
@@ -18,5 +18,5 @@
   "publishConfig": {
     "access": "public"
   },
-  "gitHead": "0fe1070e870ce5f12c66411d403b29ebd291203a"
+  "gitHead": "5eb3ca1463e651676a87672b19663a6f1ad21308"
 }
