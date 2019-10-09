@@ -13,7 +13,7 @@ jobs:
       - save_cache:
           key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
           paths:
-            - node_modules
+            - ./packages/apple/node_modules
 
   teste2:
     docker:
@@ -28,7 +28,35 @@ jobs:
       - save_cache:
           key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
           paths:
-            - node_modules
+            - ./packages/apple/node_modules
+  teste3:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+      - run:
+          name: Testing apple
+          command: cd packages/apple && yarn && yarn test
+      - save_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+          paths:
+            - ./packages/apple/node_modules
+  teste4:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+      - run:
+          name: Testing apple
+          command: cd packages/apple && yarn && yarn test
+      - save_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+          paths:
+            - ./packages/apple/node_modules
 
   build:
     docker:
@@ -55,3 +83,13 @@ workflows:
           requires:
             - teste
             - build
+      - teste3:
+          requires:
+            - teste
+            - build
+      - teste4:
+          requires:
+            - teste3
+          filters:
+            branches:
+              only: development
