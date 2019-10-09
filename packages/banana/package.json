@@ -12,5 +12,9 @@
   "dependencies": {
     "apple": "^1.0.0",
     "react": "^16.10.2"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "0fe1070e870ce5f12c66411d403b29ebd291203a"
 }

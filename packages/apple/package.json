@@ -14,5 +14,9 @@
   },
   "devDependencies": {
     "jest": "^24.9.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "gitHead": "0fe1070e870ce5f12c66411d403b29ebd291203a"
 }
