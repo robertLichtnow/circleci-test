@@ -14,7 +14,8 @@
     "react": "^16.10.2"
   },
   "publishConfig": {
-    "access": "public"
+    "access": "public",
+    "registry": "http://localhost:4873"
   },
-  "gitHead": "fb3a23b38651ce83ce0efd6426aafdc4cfbabf0c"
+  "gitHead": "7bfb34b52f14798bac19a50d50c3719d54b4ac71"
 }
