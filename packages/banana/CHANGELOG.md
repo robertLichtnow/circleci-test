@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.1.1](https://github.com/robertLichtnow/circleci-test/compare/@testing/banana@1.1.0...@testing/banana@1.1.1) (2019-10-09)
+
+
+### Bug Fixes
+
+* **publishing:** added public access to publishing ([feca798](https://github.com/robertLichtnow/circleci-test/commit/feca798))
+
+
+
+
+
 # 1.1.0 (2019-10-09)
 
 
