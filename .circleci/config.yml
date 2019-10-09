@@ -1,12 +1,10 @@
 version: 2
 jobs:
-  build:
+  teste:
     docker:
       - image: circleci/node:10.16.3
     steps:
       - checkout
-      - run:
-          command: ls -a
       - restore_cache:
           key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
       - run:
@@ -17,8 +15,43 @@ jobs:
           paths:
             - node_modules
 
+  teste2:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+      - run:
+          name: Testing apple
+          command: cd packages/apple && yarn && yarn test
+      - save_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+          paths:
+            - node_modules
+
+  build:
+    docker:
+      - image: circleci/node:10.16.3
+    steps:
+      - checkout
+      - restore_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+      - run:
+          name: Testing apple
+          command: cd packages/apple && yarn && echo "building"
+      - save_cache:
+          key: dependency-cache-{{ checksum "./packages/apple/package.json" }}
+          paths:
+            - node_modules
+
 workflows:
   version: 2
-  build_and_test:
+  test_and_build:
     jobs:
+      - teste
       - build
+      - teste2:
+          requires:
+            - teste
+            - build
