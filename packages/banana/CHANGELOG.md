@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.3](https://github.com/robertLichtnow/circleci-test/compare/@lichtnow/banana@1.2.2...@lichtnow/banana@1.2.3) (2019-10-09)
+
+
+### Bug Fixes
+
+* **package.json:** removed git head on package.json ([8a68088](https://github.com/robertLichtnow/circleci-test/commit/8a68088))
+
+
+
+
+
 ## [1.2.2](https://github.com/robertLichtnow/circleci-test/compare/@lichtnow/banana@1.2.1...@lichtnow/banana@1.2.2) (2019-10-09)
 
 
