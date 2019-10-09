@@ -3,6 +3,17 @@
 All notable changes to this project will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## [1.2.1](https://github.com/robertLichtnow/circleci-test/compare/@lichtnow/banana@1.2.0...@lichtnow/banana@1.2.1) (2019-10-09)
+
+
+### Bug Fixes
+
+* **npmrc:** added npmrc configuration ([6b3dc22](https://github.com/robertLichtnow/circleci-test/commit/6b3dc22))
+
+
+
+
+
 # 1.2.0 (2019-10-09)
 
 
