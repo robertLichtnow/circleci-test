@@ -10,7 +10,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "apple": "^1.0.0",
     "react": "^16.10.2"
   },
   "publishConfig": {
